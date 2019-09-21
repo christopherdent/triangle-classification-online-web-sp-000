@@ -18,7 +18,7 @@ class Triangle
     end 
   end 
 
-  TraingleError < StandardError
+  class TriangleError < StandardError
   
   end 
 end
