@@ -14,7 +14,7 @@ class Triangle
     
     if side1 == side2 && side3 
       :equilateral
-    elsif side1 == 90
+    elsif side1 == side2 || side3
       :isosceles
     else 
       :scalene
