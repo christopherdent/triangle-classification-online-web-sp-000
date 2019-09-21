@@ -10,7 +10,9 @@ class Triangle
   
   def kind 
     
-    
+      if side1 == 0 || side2 == 0 || side3 == 0
+      raise TriangleError
+    end 
     
     if side1 == side2 && side2 == side3 
       :equilateral
@@ -21,9 +23,7 @@ class Triangle
       :scalene
     end 
     
-    if side1 == 0 || side2 == 0 || side3 == 0
-      raise TriangleError
-    end 
+  
   end 
 
   class TriangleError < StandardError
