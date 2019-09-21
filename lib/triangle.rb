@@ -6,7 +6,12 @@ class Triangle
   
   
   def kind 
-    
+    if side 1 == side 2 && side 2 == side 3 
+      :equilateral
+    elsif side1 == 90
+      :isosceles
+    else 
+      :scalene
   end 
 
 
